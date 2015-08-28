@@ -1,13 +1,13 @@
 # Ocando-AP-Items-Stats
 	Ocando AP Items Stats API Challenge
 
-# Web App for Ap Items
-	Url: http://ocando.vnz.la
+# Web App - Ap Items
+	 http://ocando.vnz.la
 	
 **Note: all items are order by usage 
 # API USAGE
 
-///////////////////////////////////////////////////////////////////////////////////
+* ///////////////////////////////////////////////////////////////////////////////////
 ROUTE:
 	url: "http://ocando.vnz.la/api/v1/{region}/{version}/normal_5x5/items/{type?}"
 
@@ -42,4 +42,4 @@ E.Gs
 	"http://ocando.vnz.la/api/v1/lan/5.11/normal_5x5/items"
 	"http://ocando.vnz.la/api/v1/lan/5.11/normal_5x5/items/magicresist"
 	"http://ocando.vnz.la/api/v1/lan/5.11/normal_5x5/items/attackdamage"
-////////////////////////////////////////////////////////////////////////////////////
+* ////////////////////////////////////////////////////////////////////////////////////
