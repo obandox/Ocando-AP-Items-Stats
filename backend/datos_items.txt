@@ -1,0 +1,77 @@
+item
+
+- veces usado
+- ID
+- NOMBRE
+- SUBITEMS
+- ORO EXTRA
+- WIN RATE
+- CAMPEONES MAS USADO
+- LIGA MAS USADA
+
+//////////////////////////////////////////
+
+-source
+-region
+-season
+-queue
+-type
+-version
+
+///////////////////////
+
+-itemId
+-name
+-image_url
+-gold
+-timesused
+-win_rate
+-pentakills
+-avg_kills
+-avg_pentaKills
+-avg_magicDamageDealtToChampions
+-avg_minionsKilled
+-avg_creeps_min_10
+-avg_creeps_min_20
+-avg_creeps_min_30
+-avg_creeps_final
+-avg_xp_min_10
+-avg_xp_min_20
+-avg_xp_min_30
+-avg_xp_final
+-avg_gold_min_10
+-avg_gold_min_20
+-avg_gold_min_30
+-avg_gold_final
+-avg_csDiff_min_10
+-avg_csDiff_min_20
+-avg_csDiff_min_30
+-avg_csDiff_final
+-avg_xpDiff_min_10
+-avg_xpDiff_min_20
+-avg_xpDiff_min_30
+-avg_xpDiff_final
+-avg_damageTaken_min_10
+-avg_damageTaken_min_20
+-avg_damageTaken_min_30
+-avg_damageTaken_final
+-avg_damageTakenDiff_min_10
+-avg_damageTakenDiff_min_20
+-avg_damageTakenDiff_min_30
+-avg_damageTakenDiff_final
+-avg_goldEarned
+-avg_goldSpent
+-avg_playerScore
+-avg_matchDuration
+
+-- arrays
+	-builtfrom
+	-used_champions
+	-used_rank
+	-used_role
+	-used_lane
+	-used_with_spell
+
+
+
+

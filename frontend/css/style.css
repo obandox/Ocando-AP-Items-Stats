@@ -1,0 +1,273 @@
+body{
+	background-image: url("background.jpg");
+	background-size: 2200px 1500px;
+	font-size: 20px;
+}
+
+
+hr{
+    border-top: 1px solid black;
+}
+
+.fuentehigh{
+	font-family: 'Oswald', sans-serif;
+}
+
+.fuentemedium{
+	font-family: 'Orbitron', sans-serif;
+}
+
+.tabs{
+    margin-top: 30px;
+
+}
+a:link,a:visited {
+	color: black;
+    text-decoration: none;
+}
+
+a:hover,a:active {
+	color: black;
+    text-decoration: underline;
+}
+
+.navbar-default {
+    background-color: #242523;
+    border-color: #242523;
+}
+
+.navbar-default {
+    background-color: #242523;
+    border-color: #242523;
+    border-radius: 0px;
+    color: white;
+}
+.navbar-default .navbar-brand {
+    color: #FFF;
+}
+.nav-tabs {
+     border-bottom: 0px; 
+}
+.margentop{
+	margin-top: 30px;
+}
+
+.polararea{
+	margin-right: 40px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.footer{
+	height: 70px;
+
+}
+img {
+     vertical-align: middle;
+     border: 0;
+     page-break-inside: avoid;
+     max-width: 100% !important;
+     }
+.subitem{
+	margin-right: 20px;
+    margin-top: 30px;
+}
+
+.items-header>img{
+    margin-left: 13px;
+}
+
+.main-header{
+    width: 100%;
+    height: 110px;
+
+    background-image: url("sub-header2.png");
+    background-color: white;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-color: transparent;
+}
+
+.main-header.affix{
+    z-index: 999;
+    margin-top: -10px;
+}
+
+.items-header{
+	margin-top: 23px;
+	margin-left: 12px;
+}
+
+.items-header>img{
+	width: 55px;
+	height: 55px
+}
+.sub-header{
+    width: 100%;
+    height: 170px;
+
+    background-image: url("sub-header.png");
+    background-color: white;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-color: transparent;
+}
+.pull-right>h4{
+
+    margin-bottom: 10px;
+}
+
+.item-header{
+    width: 91%;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.item-header>span{
+	display: inline-block;
+}
+.iteminheader{
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 20px;
+}
+
+.item-header>img{
+	margin-bottom: 45px;
+}
+
+.main-personaje{
+
+	margin-top: 30px;
+    height: 630px;
+    background-image: url("personaje.png");
+    background-color: white;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-color: transparent;
+}
+
+
+.personaje-back{
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 298px;
+    height: 590px;
+}
+
+.personaje-titulo{
+    z-index: 100;
+    position: absolute;
+    color: white;
+    left: 90px;
+    top: 410px;
+    text-shadow: 3px 3px black;
+
+}
+
+.personaje-linea{
+    z-index: 100;
+    position: absolute;
+    color: white;
+    left: 50px;
+    top: 500px;
+    text-shadow: 3px 3px black;    
+}
+
+.playedfondo{
+    z-index: 100;
+    position: absolute;
+    left: 25px;
+    top: 380px;
+}
+.liga{
+    z-index: 100;
+    position: absolute;
+    left: 140px;
+    top: 470px;
+    width: 200px;
+    height: 150px;
+}
+
+.main-contenido{
+	margin-top: 30px;
+    height: 300px;
+
+    background-image: url("contenido.png");
+    background-color: white;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-color: transparent;
+}
+
+.main-contenido.contenido2x{
+    background-image: url("contenido2x.png");
+    height: 550px;
+    padding-left: 10px;
+}
+.main-contenido.contenido2x .contenido{
+    margin-left: 70px;
+}
+
+.contenido-medio{
+    margin-top: 30px;
+    margin-left: 65px;
+    background-image: url("contenido-medio.png");
+    width: 350px;
+    height: 100px;
+}
+.contenido-medio ul{
+    margin-top: 25px;
+    margin-left: 50px;
+
+}
+
+.tc-chart-js-legend span{
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+}
+.tc-chart-js-legend li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.pointer { 
+    cursor: pointer; 
+    cursor: hand; 
+}
+
+.contenido{
+	width: 83%;
+	margin-top: 30px;
+	margin-left: 30px;
+	text-align: center;
+}
+
+.big{
+	font-size: 50px;
+}
+
+.left{
+	margin-left: 40px;
+}
+
+.server-header{
+    width: 100%;
+    height: 110px;
+    background-image: url("header.png");
+    background-color: white;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-color: transparent;
+}
+.server-subheader{
+    margin-top: 35px;
+    margin-left: 150px;
+}
+.theitem{
+    width: 80px;
+    height: 80px;
+}
+

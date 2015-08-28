@@ -1,11 +1,3 @@
-# Ocando-AP-Items-Stats
-	Ocando AP Items Stats API Challenge
-
-# Web App for Ap Items
-	Url: http://ocando.vnz.la
-	
-**Note: all items are order by usage 
-# API USAGE
 
 ///////////////////////////////////////////////////////////////////////////////////
 ROUTE:
