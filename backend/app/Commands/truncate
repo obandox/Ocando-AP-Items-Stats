@@ -1,0 +1,9 @@
+SET FOREIGN_KEY_CHECKS=0;
+
+truncate items_stats;
+truncate items_stats_champions;
+truncate items_stats_lanes;
+truncate items_stats_matchs;
+truncate items_stats_ranks;
+truncate items_stats_roles;
+truncate items_stats_spells;

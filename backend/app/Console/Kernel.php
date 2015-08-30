@@ -17,6 +17,7 @@ class Kernel extends ConsoleKernel
         \App\Commands\SyncAPItemCommand::class,
         \App\Commands\SeederItemsChampionsCommand::class,
         \App\Commands\StatsItemsCommand::class,
+        \App\Commands\StatsItems2Command::class,
     ];
 
     /**

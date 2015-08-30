@@ -226,9 +226,13 @@ class ItemStat extends Model
         ]);
         $itemStatSpell->spell_count += 1;
         $itemStatSpell->save();
-        //COUNT SPELL2 END
 
-        $itemStat->last_match_id = $match->id;
+        //COUNT SPELL2 END
+        if($match->id)
+            $itemStat->last_match_id = $match->id;
+        
+        $itemStat->last_matchId = $match->matchId;
+
         $itemStat->save();
     }
 
