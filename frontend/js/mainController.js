@@ -1,5 +1,28 @@
 var lolapi = angular.module('lolapi', ['tc.chartjs', 'mgcrea.bootstrap.affix']);
-lolapi.controller('mainController', ['$scope', '$http', '$timeout', function($a, $http , $timeout) {
+lolapi.controller('mainController', ['$scope', '$http', '$timeout', '$sce', function($a, $http , $timeout, $sce) {
+
+  $a.backgroundVideos = [
+    "http://res.cloudinary.com/obandox/video/upload/v1440918847/ocandovnzla/EKKO.webm"
+  ];
+
+  $a.cambiarBackgroundVideo = function(){
+    $a.backgroundVideo  = $a.backgroundVideos[Math.floor(Math.random()*$a.backgroundVideos.length)];
+  }
+
+  $a.cambiaPorCampeon = function(nombre){
+    nombre = nombre.toLowerCase();
+    for (var i = $a.backgroundVideos.length - 1; i >= 0; i--) {
+      var video = $a.backgroundVideos[i];
+      if(video.toLowerCase().indexOf(nombre)){
+        $a.backgroundVideo = video;
+        return;
+      }
+    };
+    $a.cambiarBackgroundVideo();
+  }
+
+  $a.cambiarBackgroundVideo();
+
   $a.server = "lan";
   $a.modo = "normal_5x5";
   $a.items_state = 'before';
@@ -39,6 +62,14 @@ lolapi.controller('mainController', ['$scope', '$http', '$timeout', function($a,
 
   }
 
+
+
+  $a.getBackgroundVideo = function(){
+    
+    return   $sce.trustAsResourceUrl();
+
+  }
+
   $a.getItemById = function(itemId){
     for (var i = $a.items.length - 1; i >= 0; i--) {
       if( itemId == $a.items[i].itemId)
@@ -73,6 +104,8 @@ lolapi.controller('mainController', ['$scope', '$http', '$timeout', function($a,
 
 
         $a.setLinealCharts($a.selected);
+        
+        $a.cambiaPorCampeon($a.selected.champions[0].name);
 
     },50);
 

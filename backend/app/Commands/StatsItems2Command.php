@@ -67,23 +67,27 @@ class StatsItems2Command extends Command
                         $filepath = $dirpath.$entry;
                         $matchIds =  json_decode(file_get_contents($filepath), true);
                         $requests = 0;
+
+                        $last_matchId = ItemStat::where([
+                                'source' => $source,
+                                'region' => strtoupper($region),
+                        ])->max('last_matchId');
+                        if(!$last_matchId) $last_matchId = 0;
+
                         foreach ($matchIds as $matchId) {
                             echo "$region match: $matchId request: $requests \n";
 
                             $requests++;
 
-                            $match_model = Match::where([
-                                'source' => $source,
-                                'matchId' => $matchId,
-                                'region' => strtoupper($region),
-                            ])->first();
 
 
-                            if($match_model){
+                            if($matchId <= $last_matchId){
                                 echo "already exists.. skip \n";
                                 continue;
                             }
 
+                            if($requests >= 200)
+                                break;
 
                             try{
                                 $this->registerMatch($source, $region, $matchId);
@@ -93,6 +97,7 @@ class StatsItems2Command extends Command
                                 echo "error... \n";
                                 Log::error($unused);
                             }
+
 
                         }
 
