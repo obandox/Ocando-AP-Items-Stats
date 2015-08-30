@@ -2,18 +2,28 @@ var lolapi = angular.module('lolapi', ['tc.chartjs', 'mgcrea.bootstrap.affix']);
 lolapi.controller('mainController', ['$scope', '$http', '$timeout', '$sce', function($a, $http , $timeout, $sce) {
 
   $a.backgroundVideos = [
-    "http://res.cloudinary.com/obandox/video/upload/v1440918847/ocandovnzla/EKKO.webm"
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440918847/ocandovnzla/EKKO.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440920820/ocandovnzla/Miss_Fortune_Sona_Riven.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440921019/ocandovnzla/Quinn_Valor.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440920941/ocandovnzla/Thresh.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440920590/ocandovnzla/Morgana_Maokai_Darius_Ahri.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440920434/ocandovnzla/Diana.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440920167/ocandovnzla/VEL_KOZ.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440920004/ocandovnzla/Gnar.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440919985/ocandovnzla/Twisted_Fate_Graves.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440919842/ocandovnzla/YASUO.webm",
+    "http://res.cloudinary.com/obandox/video/upload/ac_none,du_30,so_0/v1440921806/VI_z2zvrl.webm",
   ];
 
   $a.cambiarBackgroundVideo = function(){
-    $a.backgroundVideo  = $a.backgroundVideos[Math.floor(Math.random()*$a.backgroundVideos.length)];
+    $a.backgroundVideo  = $sce.trustAsResourceUrl($a.backgroundVideos[Math.floor(Math.random()*$a.backgroundVideos.length)]);
   }
 
   $a.cambiaPorCampeon = function(nombre){
     nombre = nombre.toLowerCase();
     for (var i = $a.backgroundVideos.length - 1; i >= 0; i--) {
       var video = $a.backgroundVideos[i];
-      if(video.toLowerCase().indexOf(nombre)){
+      if(video.toLowerCase().replace(" ","_").indexOf(nombre)){
         $a.backgroundVideo = video;
         return;
       }
@@ -104,7 +114,7 @@ lolapi.controller('mainController', ['$scope', '$http', '$timeout', '$sce', func
 
 
         $a.setLinealCharts($a.selected);
-        
+
         $a.cambiaPorCampeon($a.selected.champions[0].name);
 
     },50);
